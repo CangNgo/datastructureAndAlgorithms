@@ -1,9 +1,8 @@
-package sort;
+package leetCode;
 
 import java.util.Arrays;
 
-public class MergeSort {
-
+public class _912_SortAnArray {
     public int[] merge(int[] a1 , int[] a2){
         int n = a1.length + a2.length;
         int[] result = new int[n];
@@ -60,11 +59,10 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int[] a1 = {1,5,3,2,8,7,6,4};
 
-        MergeSort mergeSort = new MergeSort();
-        int[] result = mergeSort.mergeSort(a1,0, a1.length-1);
+        int[] a1 = {1,5,3,2,8,7,6,4};
+        _912_SortAnArray sol = new _912_SortAnArray();
+        int[] result = sol.mergeSort(a1,0, a1.length-1);
         System.out.println(Arrays.toString(result));
     }
-
 }
